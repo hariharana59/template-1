@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPLATE</title>
+    <style>
+        body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: white;
+            padding: 15px 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: block;
+            text-align: right;
+        }
+
+        nav .logo {
+            float: left;
+            font-size: 20px;
+            color: hwb(198 23% 15%);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        nav a {
+            color: #073a17;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        header {
+            display: block;
+            text-align: left;
+            padding: 50px 30px;
+            background-color: #f5f5f5;
+            position: relative;
+            height: 400px;
+        }
+
+        .header-content {
+            display: inline-block;
+            vertical-align: top;
+            width: 45%;
+            z-index: 2;
+            position: relative;
+        }
+
+        .header-content h1 {
+            font-size: 36px;
+            margin-top: 0;
+            color: hwb(198 23% 15%);
+        }
+
+        .header-content p {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #5a5a5a;
+        }
+
+        .header-content .explore {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: hwb(198 23% 15%);;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .header-image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 55%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .header-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .search-box {
+            margin-top: 20px;
+        }
+
+        .search-box select {
+            width: 80%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .search-box .explore {
+            width: 15%;
+            padding: 10px;
+            margin-left: 10px;
+            background-color:hwb(198 23% 15%);
+            color:  #ded7d7;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #destinations {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .destination {
+            display: inline-block;
+            width: 300px;
+            margin: 20px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .destination img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .destination h3 {
+            font-size: 18px;
+            margin: 10px 0;
+            color:hwb(198 23% 15%);
+        }
+
+        .destination p {
+            font-size: 14px;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .destination .read-more {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color:hwb(198 23% 15%);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #contact {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #ded7d7;
+        }
+
+        #contact form {
+            display: inline-block;
+            width: 300px;
+            text-align: left;
+        }
+
+        #contact label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        #contact input,
+        #contact select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #contact button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #2ebedb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #contact button:hover {
+            background-color: hwb(198 23% 15%);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Explorer</div>
+        <a href="#">About</a>
+        <a href="#">Hotels </a>
+        <a href="#"> Bike Rentals</a>
+        <a href="#">Restaurants</a>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h1>Welcome to Explorer</h1>
+            <p>“Adventure Awaits: Discover the Unseen!”</p>
+            <div class="search-box">
+                <select>
+                    <option value="">search</option>
+                    <option value="first">hotels</option>
+                    <option value="second">Restaurants</option>
+                </select>
+                <a href="#" class="explore">Explore</a>
+            </div>
+        </div>
+        <div class="header-image">
+            <img src="_be618493-3827-4b39-b1b5-cf09d39c2ac4.jpeg" alt="Echo-Wave">
+        </div>
+    </header>
+    
+    <section id="destinations">
+        <div class="destination">
+            <img src="_b02d36df-ce74-474d-bd69-d3579d269cc6.jpeg"alt="Never Ending Paddy Fields">
+            <h3>Sun, Sand, and Serenity: Your Ultimate Beach Escape</h3>
+            <p>Embrace the joy of endless summer with beach activities for all ages. 
+                Dive into crystal-clear waters, build the ultimate sandcastle, or simply soak up the sun with a refreshing drink in hand.</p>
+            <a href="#" class="read-more">Booking</a>
+        </div>
+        <div class="destination">
+            <img src="pixlr-image-generator-9c6532b9-4f01-4d84-9c61-f290f1421bab.png" alt="Small Ride across town">
+            <h3>Embrace the Freedom of the Open Road</h3>
+            <p> Whether you’re cruising through city streets or exploring rugged trails, each ride offers a unique experience. 
+                It’s a chance to disconnect from the daily grind and reconnect with nature and yourself. So, gear up, hit the road, and let the journey unfold.</p>
+            <a href="#" class="read-more">Booking</a>
+        </div>
+        <div class="destination">
+            <img src="pixlr-image-generator-50c0cc97-c8eb-4380-864a-1e8a609064e7.png" alt="Short Break at the Lotus Pond">
+            <h3>Embrace the Freedom of the Open Road</h3>
+            <p>There’s nothing quite like the thrill of a bike ride. The wind in your hair, the rhythmic pedaling, 
+                and the ever-changing scenery create a sense of freedom and adventure</p>
+            <a href="#" class="read-more">Booking</a>
+        </div>
+        <div class="destination">
+            <img src="pixlr-image-generator-73b1daeb-c00d-429c-915f-861b6a1e87b4.png" alt="Road Trip">
+            <h3>Winter Wonderland Awaits</h3>
+            <p>Experience the magic of winter as snow blankets the landscape, transforming it into a serene wonderland. 
+                The crisp air and sparkling snowflakes create a picturesque scene perfect for cozy moments and outdoor adventures</p>
+            <a href="#" class="read-more">Booking</a>
+        </div>
+        <div class="destination">
+            <img src="pixlr-image-generator-6b43e075-1f8c-4118-bc94-85571c46a991.png" alt="Divine Agraharams">
+            <h3>Fall in love with paddy fields</h3>
+            <p>Paddy fields offer a tranquil escape from the hustle and bustle of everyday life. 
+                The lush green expanses, dotted with shimmering water, create a picturesque landscape that soothes the soul. Walking through these fields, 
+                you can hear the gentle rustle of the rice plants swaying in the breeze and the distant calls of birds.</p>
+            <a href="#" class="read-more">Booking</a>
+        </div>
+        <div class="destination">
+            <img src="pixlr-image-generator-dd56b257-d27b-41f5-b7cd-bde7b52e6881.png" alt="Energy Drive">
+            <h3>Taj Mahal:A love poem in marble</h3>
+            <p>create a picturesque landscape that soothes the soul. Walking through these monuments</p>
+            <a href="#" class="read-more">Booking</a>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Our travel agency will reach you soon!</p>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="home-town">Your native</label>
+            <select id="home-town" name="home-town">
+                <option value="">Choose</option>
+                <option value="town1">Town 1</option>
+                <option value="town2">Town 2</option>
+            </select>
+            
+            <label for="destination">Where would you like to go?</label>
+            <select id="destination" name="destination">
+                <option value="">Choose</option>
+                <option value="place1">Place 1</option>
+                <option value="place2">Place 2</option>
+            </select>
+            
+            <label for="contact-number">Contact Number</label>
+            <input type="text" id="contact-number" name="contact-number">
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
